@@ -39,7 +39,7 @@ class Rtutorial extends PluginBase implements Listener{
 		}
 	}
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
-		if($command->getName() == "튜토리얼지정"){
+		if($command->getName() === "튜토리얼지정"){
 			if($sender instanceof Player){
 				$position = $this->getpo($sender);
 				$this->sd['position'] = $position;
@@ -74,7 +74,7 @@ class Rtutorial extends PluginBase implements Listener{
 		$x = $block->getX();
 		$y = $block->getY();
 		$z = $block->getZ();
-		if($event->getLine(0) == "튜토엔드"){
+		if($event->getLine(0) === "튜토엔드"){
 			if($player->isOp()){
 				$event->setLine(0, "§f[§6라면서버§f]");
 				$event->setLine(1, "§c튜토리얼§f을 §6끝냅니다.");
