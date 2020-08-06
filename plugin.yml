@@ -1,0 +1,10 @@
+name: Rtutorial
+main: RoMo\Rtutorial\Rtutorial
+author: "RoMo_Official"
+version: "1.0.0"
+api:
+  - 3.0.0
+
+commands:
+  튜토리얼지정:
+    default: OP
